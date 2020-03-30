@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block heading %}
+<h1>This is my wednesday heading</h1>
+{% endblock %}
+
+{% block content %}
+
+<h1>Days of the week</h1>
+<ul>
+	{% for days in week_days %}
+	{% if days == "Saturday" %}
+    <li>Weekend</li>
+	{% else %}
+	<li>{{ days }}</li>
+    {% endif %}
+	{% endfor %}
+	
+</ul>
+
+{% endblock %}
+
+
+
+{% block script %}
+<script>
+	any javascript code
+</script>
+{% endblock %}
